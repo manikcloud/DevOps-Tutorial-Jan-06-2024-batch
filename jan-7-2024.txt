@@ -1,0 +1,252 @@
+cat /etc/issue
+clear
+ls
+pwd
+ls -l
+date
+ls -l
+cat hello > a.txt
+ll
+date 
+clear 
+ls -la
+ls -lah
+ls -lh
+ls -lht
+ls -lhtr
+ls -larth 
+mkdir devops
+ll
+mkdir -p  mgmt/dev/non-prod/code
+ll 
+cd mgmt/
+ll
+ll *
+ll **
+ll * *
+ll 
+ll *
+tree
+apt  install tree
+sudo apt  install tree
+tree
+sudo -i
+sudo su 
+cd dev/non-prod/
+cd /home/varunmanikoutlo/mgmt/dev/
+cd non-prod/
+cd ..
+cd mgmt/dev/non-prod/
+cd ../../
+cd -
+tree
+rmdir -r dev
+rm -rf dev
+tree
+touch calc.java
+ls
+cat calc.java 
+cat calc.java index.html calc.py 
+touch calc.java index.html calc.py 
+ls
+rm calc.java 
+ls
+rm *
+ll
+cat Hi, we are learning Linux.
+cat Hi, we are learning Linux. > index.html
+cat "Hi, we are learning Linux." > index.html
+echo "Hi, we are learning Linux." > index.html
+echo "my name is: XYZ"
+ls 
+cat index.html 
+ll
+vim contacts.html
+ls
+nano aboutus.html
+ll
+cat aboutus.html 
+history 
+nano sales.html
+ls
+history 
+ll
+vim install.sh
+ll
+chmod u+x
+chmod u+x install.sh 
+ls
+ll
+chmod ug+x install.sh 
+ll
+chmod ug-w install.sh 
+ll
+mkdir test
+mv install.sh test/
+cd test/
+ll
+user>group>others chmod 777 install.sh 
+chmod 777 install.sh 
+ll
+chmod 774 install.sh 
+ll
+echo "hi this is php page" > index.php
+ll
+chown apache:apache index
+chown apache:apache index.php 
+apt install nginx 
+sudo apt install nginx 
+cat /etc/passwd
+cat /etc/passwd | grep -i nginx 
+cat /etc/passwd | grep -i tomcat
+ll
+chown tmocat:tomcat index.php 
+sudo chown tmocat:tomcat index.php 
+adduser web 
+sudo adduser web1
+chmod web1 index.php 
+sudo chown tmocat:tomcat index.php 
+cat /etc/passwd | grep -i tomcat
+sudo chown tomcat:tomcat index.php 
+ll
+sudo chown tomcat: install.sh 
+ll
+history | cut -8
+history > jan-06-2024.txt
+ll
+cat jan-06-2024.txt 
+ll
+cat jan-06-2024.txt 
+cat -n jan-06-2024.txt 
+less jan-06-2024.txt 
+head jan-06-2024.txt 
+tail jan-06-2024.txt 
+cat jan-06-2024.txt | grep tree
+cat jan-06-2024.txt | grep -i Tree
+cat jan-06-2024.txt | grep Tree
+man cat
+man vim 
+exit
+pwd
+ls
+ls -l
+ls -lh
+ls -lthr
+ls -lth
+ls -larth
+ls -lrth
+cd mgmt/
+ls
+cd ..
+pwd
+ping 8.8.8.8
+ll
+mkdir 2-Lession-Git
+cd 2-Lession-Git/
+https://github.com/manikcloud/DevOps-Tutorial-Jan-06-2024-batch.git
+git 
+apt install git
+sudo apt install git
+git clone https://github.com/manikcloud/DevOps-Tutorial-Jan-06-2024-batch.git
+ll
+cd DevOps-Tutorial-Jan-06-2024-batch/
+ll
+vim README.md 
+git add . 
+git commit -am"first change"
+git push 
+cd ..
+rm -rf DevOps-Tutorial-Jan-06-2024-batch/
+ll
+git clone git@github.com:manikcloud/DevOps-Tutorial-Jan-06-2024-batch.git
+ssh-keygen 
+cat /home/varunmanikoutlo/.ssh/id_rsa.pub
+git clone git@github.com:manikcloud/DevOps-Tutorial-Jan-06-2024-batch.git
+ll
+cd DevOps-Tutorial-Jan-06-2024-batch/
+vim README.md 
+git add . && git commmit -am"first commit"
+git add . && git commit -am"first commit"
+git puh 
+git push
+git config --global user.email "varun@gmail.com"
+git config --global user.name "varun-sl"
+git add . && git commit -am"first commit"
+git push 
+cat ~/.ssh/id_rsa.pub
+cd ..
+rm -rf DevOps-Tutorial-Jan-06-2024-batch/
+git clone git@github.com:manikcloud/DevOps-Tutorial-Jan-06-2024-batch.git
+cd  DevOps-Tutorial-Jan-06-2024-batch/
+git -v
+tree
+ls -a
+cd .git 
+tree
+cd ..
+vim index.html
+ls
+git status 
+git add index.html 
+git status 
+git commit -m "adding index.html"
+git status 
+git push 
+vim index.html 
+git status 
+git add index.html 
+git status 
+git commit -m"changing the heading"
+git status 
+git push
+git status 
+cat index.html 
+git pull 
+cat index.html 
+git pull 
+cat index.html 
+git pull 
+git branc 
+git branc h
+git branch
+git checkout -b dev 
+git branch
+vim contact-us.html
+git status 
+git add contact-us.html 
+git status 
+git commit -m"adding contact-ud.html"
+git status 
+git push 
+git push --set-upstream origin dev
+git switch -c uat 
+ll
+git branch 
+vim about-us.html
+git add . && git commit -am"adding about-us.html"
+git push 
+git checkout main 
+git branch 
+git switch dev
+git branch 
+git branch -a
+git branch 
+cd .git 
+ls
+ll
+cat HEAD 
+cd ..
+git switch uat
+cat .git/HEAD 
+cd .git/
+ll
+cat ORIG_HEAD 
+cd ..
+git branch 
+git switch main
+git merge uat
+git status 
+git push
+git branch -d uat
+git branch
+history | cut -c 8- > jan-7-2024.txt
