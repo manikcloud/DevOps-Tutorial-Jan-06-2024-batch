@@ -1,0 +1,42 @@
+Could you please let me know what the usages for git log?
+
+Also, I wanted to know about the git tags?
+
+[200~Git stash -u
+Git stash pop 
+
+
+
+DIVYA KISHORE KOTIAN  to  Everyone 12:10
+
+Diff betnFetch and pull
+
+
+
+Rakesh Sharma 12:10
+
+Could you please let me know what the usages for git log?
+Also, I wanted to know about the git tags?
+SHRIYA SHAH 12:11
+
+how to use multiple git accounts in one linux system
+
+what is git cherry-pick
+
+
+
+Manash Ranjan Dakua  to  Everyone 12:11
+
+how to delete the commit id?
+
+
+
+NITHIN KUMAR B N 12:11
+
+Explain about git cherry-picki
+
+NITHIN KUMAR B N 12:11
+
+Explain about git cherry-pick
+
+git reset — mixed and git merge — abort
