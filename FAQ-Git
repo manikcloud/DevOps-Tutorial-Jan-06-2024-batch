@@ -1,0 +1,160 @@
+# Git Frequently Asked Questions (FAQ)
+
+## Table of Contents
+1. [Usages of Git Log](#usages-of-git-log)
+2. [Git Tags](#git-tags)
+3. [Git Stash](#git-stash)
+4. [Difference Between Fetch and Pull](#difference-between-fetch-and-pull)
+5. [Using Multiple Git Accounts on One Linux System](#using-multiple-git-accounts-on-one-linux-system)
+6. [Git Cherry-Pick](#git-cherry-pick)
+7. [Deleting a Commit](#deleting-a-commit)
+8. [Git Reset — Mixed](#git-reset--mixed)
+9. [Git Merge — Abort](#git-merge--abort)
+
+---
+
+### Usages of Git Log
+`git log` is a command used to review the history of commits in a repository. It displays the commit ID, author, date, and commit message. You can customize its output using various options, like `--oneline`, `--graph`, etc., to view the commit history in different formats.
+
+
+#### Commands and Examples
+```bash
+# Basic Log:
+git log
+
+# Oneline Log:
+git log --oneline
+
+# Graph Log:
+git log --graph --oneline
+
+---
+
+### Git Tags
+Git tags are references that point to specific points in Git history. They are often used to mark release points (v1.0, v2.0, etc.). There are two types of tags: lightweight and annotated. Annotated tags are recommended for most use cases as they include the tagger name, email, date, and have a tagging message.
+
+
+### Git Tags Commands
+- Creating an Annotated Tag:
+
+```
+git tag -a v1.0 -m "Release version 1.0"
+```
+
+- Viewing Tags:
+
+```
+git tag
+```
+### Checking out a Tag:
+
+```
+git checkout tags/v1.0```
+
+### Git Stash
+`git stash -u` temporarily stashes changes, including untracked files. It's useful for saving your work-in-progress changes without committing them. `git stash pop` applies the stashed changes back to your working directory and removes them from the stash list.
+
+### Git Stash Commands
+Stash Changes Including Untracked:
+
+```
+git stash -u
+```
+
+### Apply the Last Stash:
+
+
+```
+git stash pop
+
+```
+
+
+---
+
+### Difference Between Fetch and Pull
+`git fetch` downloads commits, files, and refs from a remote repository into your local repo, updating your remote-tracking branches. `git pull`, on the other hand, not only fetches but also merges the fetched changes into your current branch.
+
+### Fetch vs Pull Commands
+- Fetch:
+
+
+```git fetch origin```
+
+- Pull:
+
+```
+git pull origin main
+```
+
+---
+
+### Using Multiple Git Accounts on One Linux System
+To use multiple Git accounts on one system, configure user-specific details (user.name and user.email) at the repository level. This allows each repo to have its own unique configuration, separate from the global Git configuration.
+### Multiple Git Accounts Commands
+Set Local Repository Username:
+
+```
+git config user.name "Your Username"
+git config user.email "your_email@example.com"
+```
+
+
+### Check Repository Config:
+
+
+```
+git config --list
+
+---
+
+
+### Git Cherry-Pick
+
+`git cherry-pick` is used to apply the changes introduced by some existing commits to the current branch. It's a way to pick and choose individual commits from another branch without merging the whole branch.
+
+Git Cherry-Pick Commands
+### Cherry-Pick a Commit:
+
+
+```
+git cherry-pick <commit-hash>
+```
+
+---
+
+### Deleting a Commit
+To delete a commit, you can use `git reset` to move the HEAD to a previous commit and discard changes, or `git revert` to create a new commit that undoes the changes of a specified commit.
+
+### Deleting a Commit Commands
+Reset to Previous Commit (Soft):
+
+
+```git reset --soft HEAD~1```
+
+### Revert a Commit:
+
+```
+git revert <commit-hash>
+Git Reset — Mixed Commands```
+---
+
+### Git Reset — Mixed
+`git reset --mixed` is the default mode for `git reset`. It resets the index but not the working tree and changes what is to be committed.
+
+``
+git reset --mixed <commit-hash>
+Git Merge — Abort Commands
+```
+
+---
+
+### Git Merge — Abort
+If a merge results in conflicts, and you decide not to proceed with the merge, you can use `git merge --abort` to abort the merge action and return the branch to its pre-merge state.
+
+### Abort a Merge:
+
+
+```git merge --abort
+```
+---
