@@ -1,6 +1,4 @@
 # DevOps-Tutorial-Jan-06-2024-batch
-1234567
-DevOps-Tutorial-Jan-06-2024-batch
 # Git Frequently Asked Questions (FAQ)
 
 ## Table of Contents
@@ -30,7 +28,7 @@ git log --oneline
 
 # Graph Log:
 git log --graph --oneline
-
+```
 ---
 
 ### Git Tags
@@ -52,7 +50,9 @@ git tag
 ### Checking out a Tag:
 
 ```
-git checkout tags/v1.0```
+git checkout tags/v1.0
+
+```
 
 ### Git Stash
 `git stash -u` temporarily stashes changes, including untracked files. It's useful for saving your work-in-progress changes without committing them. `git stash pop` applies the stashed changes back to your working directory and removes them from the stash list.
@@ -108,15 +108,15 @@ git config user.email "your_email@example.com"
 
 ```
 git config --list
-
+```
 ---
 
 
-### Git Cherry-Pick
+## Git Cherry-Pick
 
 `git cherry-pick` is used to apply the changes introduced by some existing commits to the current branch. It's a way to pick and choose individual commits from another branch without merging the whole branch.
 
-Git Cherry-Pick Commands
+- Git Cherry-Pick Commands
 ### Cherry-Pick a Commit:
 
 
@@ -139,15 +139,18 @@ Reset to Previous Commit (Soft):
 
 ```
 git revert <commit-hash>
-Git Reset — Mixed Commands```
+Git Reset — Mixed Commands
+
+```
 ---
 
 ### Git Reset — Mixed
 `git reset --mixed` is the default mode for `git reset`. It resets the index but not the working tree and changes what is to be committed.
 
-``
+```
 git reset --mixed <commit-hash>
 Git Merge — Abort Commands
+
 ```
 
 ---
@@ -158,6 +161,7 @@ If a merge results in conflicts, and you decide not to proceed with the merge, y
 ### Abort a Merge:
 
 
-```git merge --abort
+```
+git merge --abort
 ```
 ---
